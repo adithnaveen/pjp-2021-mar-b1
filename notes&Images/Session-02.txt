@@ -1,0 +1,106 @@
+diff between nosql, sql 
+
+OOAD
+DBMS / RDBMS 
+NoSQL  - Mongo 
+
+
+do we use UML ? 
+
+Context Diagram 
+Sequence 
+Class Diagram 
+Use Case Diagram 
+Activicty 
+flow chart 
+dfd 
+
+2010 
+Water Fall Model 
+RA -> Designed -> 
+
+Agile 
+
+
+Kanban 
+Scrum 
+
+
+2003 - C, C++, Java  ( I ) - No of transaction on the internet 100 
+2010 - Java, Servlet, JSP, Spring, Hibernate ( T ) 10000
+2021 - COMB MMMMMM (JAVA, agile, web development, AI, aws ) 10million
+
+
+DB - DBMS - RDBMS - NoSQL
+
+CAP Theorem 
+
+C - Consistency 
+A - Availability 
+P - Partition Tolerance 
+
+
+MongoDB
+RedisDB 
+CouchDB 
+MariaDB 
+CassandraDB
+DynamoDB 
+
+
+E-R (1, 2, 3, 4, 5, 6)
+rows & columsn 
+ACID 
+SLOW 
+only value 
+Object Oriented Programming OOPS 
+MySQL DBBM 
+Oracle DBMS 
+DB2 DBMS 
+DB Derby DBMS 
+
+
+Model 
+class Employee {
+	private int empId; 
+	private String empName; 
+	private double empSal; 
+}
+
+ 
+FB  - you followme- i write a post - you dont received 
+HDFC - company pays money - transfer is not done 
+
+8 question 
+questions.txt 
+mongo "url"
+write a query for get all the records inventory 
+
+answers.txt
+// Ans 1  db.inventory.find();
+// Ans 2 db.
+		inventory.
+			find(// some condition );
+// Ans 3 
+
+
+	"ns" : "sapdb.emps",
+	"size" : 146,
+	"count" : 2,
+	"avgObjSize" : 73,
+	"storageSize" : 36864,
+	--------------------
+
+"totalIndexSize" : 57344,
+	"indexSizes" : {
+		"_id_" : 36864,
+		"empname_1" : 20480
+	},
+	"scaleFactor" : 1,
+	"ok" : 1
+
+
+
+
+
+

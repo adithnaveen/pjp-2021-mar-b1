@@ -1,0 +1,148 @@
+akhil - DTU - web development - travelling
+Aman - playing travelling singing 
+Aneesha - iit bhubaneshwar - basket ball 
+aniket - IIT(ISM), Dhanbad. My interest lies in Machine Learning, Web Development and Competitive Programming
+aritra - watching sports, coding football 
+avadh narayan - photography, badminton 
+chirag - DTU - competative progmming, web development 
+danish - DTU - travelling, singing, playing sports 
+Gaurav - watch criket(test), watching animation  
+janak - dtu - playing TT, DataStructures
+mustafa - 
+pankaj - DTU - open source development, cricket plaing 
+ravneesh - playing football, 
+sanchit - DTU - watching animation, sketch, cricket and badmintion, block chain, like ML 
+sanyam- DTU - play football, cricket , play station 
+shivam - DTU - sports cricket, kabaddi 
+sihivani - travelling, dancing 
+vibhu - dtu - football and video games, ML & web development 
+vikas - DTU - web development, cricket and singing 
+
+
+Java 
+
+GIT - GitHub, BitBucket 
+Maven- 
+	log.info()
+	log.debug()
+	log.warn()
+Jenkins 
+
+
+Work collabarate, culture of team work, parallel work 
+These tools make start and end of the work 
+How can it be easy?, on long run, automation of task 
+maven is similar to npm / yarn - project management work + dependencies 
+
+
+int main() {
+	printf("Hello World"); 
+}
+
+
+program - Apply 
+Left - Right 
+
+Apply - Program
+Right - Left 
+
+
+class Employee {
+	private int empId; 
+	private String empName; 
+	private String email; 
+
+}
+
+{
+	empId:101, 
+	empName:"Harry", 
+	email:"Harry@barry.com"
+}
+
+
+
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+
+
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+
+jira / meistertask 
+
+User Stories 
+BDD 
+
+Aman 
+Given the application is loaded
+When user gives valid credentials 
+Then take he/she to home page 
+
+Ravneesh
+Given the application is loaded
+When user gives in valid credentials 
+Then take he/she to error page 
+
+
+https://www.jenkins.io/download/
+
+
+
+
+pipeline {
+   agent any
+
+   tools {
+      // Install the Maven version configured as "M3" and add it to the path.
+      maven "M3"
+   }
+
+   stages {
+      stage('Build') {
+         steps {
+            // Get some code from a GitHub repository
+            git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+
+            // Run Maven on a Unix agent.
+            sh "mvn -Dmaven.test.failure.ignore=true clean package"
+
+            // To run Maven on a Windows agent, use
+            // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+         }
+
+         post {
+            // If Maven was able to run the tests, even if some of the test
+            // failed, record the test results and archive the jar file.
+            success {
+               junit '**/target/surefire-reports/TEST-*.xml'
+               archiveArtifacts 'target/*.jar'
+            }
+         }
+      }
+   }
+}
+
+
+
+
+http://github.com/yourname/sapinet-pjp-training 
+	week-1
+	week-2
+	week-3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
