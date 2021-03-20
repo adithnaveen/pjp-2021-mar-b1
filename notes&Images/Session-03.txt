@@ -1,0 +1,267 @@
+Getting started with java 
+jUnit -  4 or 5 
+mockito - mocking 
+SOLID 
+
+
+JVM/JRE/JDK - vikas
+
+
+platform independent 
+	JVM 
+
+Sample.java
+class Sample {}
+
+to make it platform independent (MAC/WIN/LIN/)
+compiler + documentation + integrate with c / c++ + understanding memory usage 
+
+Sample.class -> JVM (win/mac/lin) + (sytactically + semantic checks)
+100% that there is no problem 
+
+
+Parent / Uncle (in your browser / OS ) - JRE 
+Mobile -> website 
+
+just executes 
+
+ 
+
+DI / IOC  - VIBHU 
+
+
+
+class Emp{}
+
+
+Emp emp = new Emp(); 
+emp = new Emp(); 
+emp = new Emp(); 
+emp = new Emp(); 
+emp = new Emp(); 
+emp = new Emp(); 
+emp = new Emp(); 
+
+
+OS 
+	JAVA 
+	WINWORD
+	EXCEL
+	CHROME
+	FIREFOX
+	IE
+	SAFARI
+	MEDIA PLAYER 
+
+
+
+
+System.runtime.gc(); 
+
+
+
+
+
+
+
+
+
+
+interface List {
+	public boolean add(Object);
+	public boolean remove(int); 
+}
+
+class ListMockTest {
+	@Test
+	public void mockList() {
+		List mockList = mock(List.class); 
+		when(listMock.size()).thenReturn(2); 
+		assertEquals(2, mockList.size())
+	}
+}
+  
+
+
+class ArrayList implements List {
+	public boolean add(Object){}
+	public boolean remove(int){}
+}
+
+
+class ListSpyTest {
+	void spyListSize() {
+		List listMock = spy(ArrayList.class); 
+		assertEquals(0, listMock.size()); 
+		
+		listMock.add("shivam"); 
+		assertEquals(1, listMock.size()); 
+	}
+}
+
+
+
+
+WHY SOLID 
+Better dev process 
+follow set of principles 
+helps to find bugs 
+expand the code 
+reduce the dependencies 
+saves cost time and debugging 
+
+Apply 
+S - Single Responsibility 
+
+old code 
+
+db.properties 
+URL=jdbc:mysql://localhost/somedb
+USERNAME=root
+PWD=something
+DRIVER=com.mysql.jdbc.Driver
+
+
+class MyConnection {
+	public boolean checkConnection() {
+	// get props 
+		Properties prop = new Properties(); 
+		
+		prop.load(db.properties); 
+		String URL = prop.get("URL"); 
+		String USERNAME = prop.get("USERNAME"); 
+		String PWD = prop.get("PWD"); 
+		
+		// load external dependencies 
+		Class.forName("com.mysql.jdbc.Driver"); 
+		Connection con =DriverManager.getConnection(URL, USERNAME,PWD); 
+		
+
+		check if connection is got or not 
+		if(con!=null) {
+			return true; 
+		}
+		
+		return false; 
+	}
+	
+}
+
+
+new code 
+
+
+db.properties 
+------------------------------------------------
+URL=jdbc:mysql://localhost/somedb
+USERNAME=root
+PWD=something
+DRIVER=com.mysql.jdbc.Driver
+
+
+interface DBTypes {
+	String URL="URL"; 
+	String USERNAME="USERNAME"; 
+	String PWD = "PWD"; 
+	String DRIVER = "DRIVER"; 
+}
+
+
+enum DBTtypes{
+	URL, USERNAME, PWD,DRIVER
+}
+
+class MyConnection {
+		Properties prop; 
+		
+		public MyConnection() {
+			prop = new Properties(); 
+			prop.load(db.properties); 
+		}
+		
+	public boolean checkConnection() {
+	 
+		Class.forName(getProps(DBTypes.DRIVER)); 
+		Connection con =DriverManager.getConnection
+			(
+				getProps(DBTypes.URL), 
+				getProps(DBTypes.USERNAME),
+				getProps(DBTypes.PWD)); 
+		
+		return this.checkconnection(con); 
+	}
+	
+	public boolean checkConnection(Connection con){
+		return con!=null;
+	}
+	
+	public String getProps(String key) {
+		return prop.get(key); 
+	}
+}
+
+
+
+
+
+
+O
+L
+I
+D 
+
+
+shivam 
+
+
+db.properties 
+URL=jdbc:mysql://localhost/somedb
+USERNAME=root
+PWD=something
+
+
+class MyConnection {
+	public boolean checkConnection() {
+	
+		// call getprops 
+
+		// loadAndVerify
+		
+		// check if connection is got or newot 
+		if(con!=null) {
+			return true; 
+		}
+		
+		return false; 
+	}
+	
+	public List<string> getprops()
+	{
+		// get props 
+		Properties prop = new Properties(); 
+		
+		prop.load(db.properties); 
+		String URL = prop.get("URL"); 
+		String USERNAME = prop.get("USERNAME"); 
+		String PWD = prop.get("PWD"); 
+		return list (USERNAME , PWD, URL);
+	}
+
+	 public boolean loadAndverify(List<string> attributes)
+	 {
+	 	// load external dependencies 
+		Class.forName("com.mysql.jdbc.Driver"); 
+		Connection con =DriverManager.getConnection(URL, USERNAME,PWD); 
+
+		
+	 }
+
+}
+
+
+
+
+
+
+
+
