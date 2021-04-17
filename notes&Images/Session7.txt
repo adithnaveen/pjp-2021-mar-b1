@@ -129,13 +129,35 @@ Like StackOverFlow for Fitness
 		- keeto diet 
 		- 
 5. For Each Category 
-	- Questions 
+	- Questions / article /blog 
 		[like / dislike]
 	- [ 
 		[answers]
 		[like / dislike]
 		- reply to Answer 
-		]
+	 ]
+6. fitness goles with timelines
+7. users summary / lifestyle 
+8. reputation of the user editing tags etc 
+9. badge system based on points (silver / gold / platinum)
+10. trainer can upload videos [youtube]
+11. filter question based on trending 
+12. cron work to remove spam question (based on dislikes )
+13. BMI Value 
+
+
+BY Tuesday 
+
+By Thursday - Data Model
+
+ 
+Batch 	Anchor Name
+Batch 1	
+    Shivam Chaudhary - T1 
+	Gaurav Kumar - T2 
+	Sanyam Gupta - T3 
+	Bitan Sarkar - T4 
+
 
 
 1. Data model 
