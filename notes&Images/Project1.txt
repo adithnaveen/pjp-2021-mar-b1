@@ -1,0 +1,47 @@
+HTML - tags , attributes, forms, tables
+	- a, img, float, clear, meta tags, em, span, div, psedo classes (hover, checked, nth-child, before & after )
+CSS 
+	class, id 
+
+create pages 
+applied CSS 
+RWD 
+
+
+psedo-classses
+
+selector:psedo-class {
+	property:value
+}
+
+
+project work 
+-------------------------------------------
+1. frame problem statement (MVP)
+	- Business Use Case 
+	- Reps.com - For Fitness
+2. tech stack 
+	- Java 
+		* MongoDB 
+		* SpringBoot 
+		* HTML / CSS / JavaScript 
+3. time line 
+	- 6 weeks 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

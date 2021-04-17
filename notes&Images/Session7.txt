@@ -1,0 +1,205 @@
+- interact with HTML Elements - true - 
+	getElementById, querySelector , querySelectroAll 
+- client validation 
+- it fast ?  - false  (Interpreter)
+	Java / C / C++ / python = 1000 
+	entire program -> compiler (Syntax & Semantics) -> object 
+
+
+	function hi () {
+		let div = document.getElementById("mydiv");
+		div.innserHTML = "hello"; 
+		let name = prompt("Enter name"); 
+		alert("Welcome ", name)
+	}
+
+- make the side dynamic and interactive, more beautiful 
+- it is interpreted language 
+- its easy & test based language - Jest, mocha, chai (Assertion library [should, expect, assert]), jasmine 
+
+describe("this my suite", () => {
+	test("my test case ", () => {
+		expect("hi", "hi")
+	})
+})
+
+
+- every body have deidcated javascript enginee 
+- used to do interaction between server side and client side 
+
+	AJAX - 2003 - Jessy James - Google 
+	
+	XMLHttpRequest, fetch 
+- it can used for front end and backend 
+- its browser language, then its for backend 
+- partial page load/reload  
+- you can pass function to a function 
+
+
+function dosomething(name) {
+	console.log("dosomething", name)
+}
+
+function addDoSomeThing(name, dosomething){
+	dosomething(name)
+}
+
+
+function callback(name, resolve, reject) {
+	
+}
+
+
+callback("name", () => {
+	log("the message")
+}, reject(err) => {
+	log(err)
+} )
+
+
+
+
+
+
+- async in nature and error handling 
+
+
+
+ const response = await fetch(url, {
+    method: 'POST', 
+    mode: 'cors',  
+    cache: 'no-cache', 
+    credentials: 'same-origin',  
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    redirect: 'follow',  
+    referrerPolicy: 'no-referrer', 
+    body: JSON.stringify(data)
+  });
+
+
+
+
+---------------------------------------------------------
+function hi() {
+	let file = "fetch_info.txt"
+
+	fetch ("https://jsonplaceholder.typicode.com/todos/1")
+		.then(x => x.text())
+		.then(y => console.log(y));
+
+		console.log("hi i'm last line")
+}
+---------------------------------------------------------
+function async hi() {
+let file = "fetch_info.txt"
+
+	let ret = await fetch ("https://jsonplaceholder.typicode.com/todos/1"); 
+	let jonval  = await x => x.text(); 
+	console.log(jsonval); 
+
+console.log("hi i'm last line")
+
+
+}
+
+
+npm install 
+npm start 
+
+
+
+Reps.com 
+
+Like StackOverFlow for Fitness 
+
+1. User Registration 
+2. User Login 
+2.1 Admin account 
+3. User Profile - Data, pics 
+4. Categories 
+	- fitness
+		- gain weight 
+		- loose weight 
+		- stamina
+		- cardio 
+
+	- diet  
+		- keeto diet 
+		- 
+5. For Each Category 
+	- Questions 
+		[like / dislike]
+	- [ 
+		[answers]
+		[like / dislike]
+		- reply to Answer 
+		]
+
+
+1. Data model 
+	User 
+	{
+		userId:101, 
+		userName :  {
+			firstName:"Pankaj", 
+			lastName: "Dahiya"
+		}, 
+		address: {}, 
+		profile: {
+			social-links:[
+				"http://facebook.com/pankj-dahiya", 
+				"http://twitter.com/p-dahiya", 
+				"http:instagram.com/panjaj-d"
+			], 
+			pictures: [
+				http://drive.google.com/p-dahiya/addcount/img-101.jpg, 
+				http://drive.google.com/p-dahiya/addcount/img-102.jpg, 
+				http://drive.google.com/p-dahiya/addcount/img-103.jpg, 								
+			]
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Admin 
+	Question 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

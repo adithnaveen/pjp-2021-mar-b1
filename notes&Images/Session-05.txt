@@ -1,0 +1,168 @@
+Generics & collections 
+functional programming 
+theads 
+exception handling 
+files and directories 
+
+
+
+
+- why java - pankaj 
+platform independent, architectural neutral 
+OO behaviours 
+matured platform 
+1995 - 2021 
+1996 
+1997
+
+JDK 1.7 
+- OOPL 
+	
+	Goovy 
+	Kotlin - pivotal 
+	ruby 
+	R
+	
+
+class Hi {
+	void bye() {}
+	void hello() {}
+	void cya() {}
+	
+	void callme() {
+		this.bye();
+		this.hello();
+		this.cay();
+	}
+}
+
+JDK 1.8 
+
+functional programming 
+
+
+
+
+
+class TestMe{
+	public static void main(String args[]) {
+		List<String> names = new ArrayList<String>();
+		names.add("aniket");
+		names.add("gaurav");
+		names.add("pankaj");
+		names.add("aneesha");
+		
+		// version 1 
+		for(int i=0; i<names.size(); i++) {
+			System.out.println(names[i])
+		}
+		
+		// version 2 
+		for(String temp : names) {
+			System.out.println(temp)
+		}
+		
+		// version 3.0 
+		names.forEach(System.out :: println)
+		
+		// version 4.0 
+		names.forEach(temp -> System.out.println(temp))
+		
+		
+	}
+}
+
+
+		// version 4.0 
+		names.forEach(temp -> System.out.println(temp))
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class Hello extends Applet{
+	public static void main(String args[]) {
+		.///// 
+	}
+}
+
+Tomcat  - Apache - web server 
+Glassfish -sun microssystem 
+Weblogic - oralce
+Webspehere - ibm 
+jboss- jboss 
+
+
+
+
+
+- Wild card in generics  extends & super - shivam question 
+- explore on the packages and does these API offer us 
+	ArrayList vs vector - Gaurav 
+- is functional programming used in production - aniket 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@FunctionalInterface
+public interface DateCalculator {
+	
+	public Calendar calDate(Calendar calendar, int days);
+
+}
+
+
+
+DateCalculator addDays = (calendar, days) -> {
+	calendar.addDays(days); 
+}
+
+DateCalculator addMonths = (calendar, month) -> {
+	calendar.addMonth(month); 
+
+}
+
+
+
+
+
+
+
+
+
+
+

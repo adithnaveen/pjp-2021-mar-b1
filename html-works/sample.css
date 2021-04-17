@@ -1,0 +1,27 @@
+a:link{
+    color: bisque;
+}
+a:visited {
+    color: red;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: blueviolet;
+}
+
+p::first-line{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+p::first-letter {
+    color: black;
+    font-size: xx-large;
+}
+
+::selection{
+    color: blue;
+}
