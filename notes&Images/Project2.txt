@@ -1,0 +1,68 @@
+Sanyam - ROOM1 
+	- 
+	
+	select p.POST_ID, p.TITLE, m.link from post p, media m, post-media pm
+		where p.postid = pm.postid & m.mid = pm.mid and 
+		p.postid = "P1"; 
+
+
+Bitan - ROOM2 
+	- need to make table / data model which can be presented 
+
+Gaurav  - ROOM 3 
+	- was not available last session 
+	- jatin will explain 
+	- have put badge(VARCHAR(20)) - Silver / Gold / Diamond /Platinum
+		this should be associated to points system - Up Vote / Down Vote 
+	- badge is derived value of reputation 
+	- 1 user -1 pic(profile)
+
+
+Shivam - ROOM 4 
+	- blog - Navee 
+	vote (UP / DOWN) 2
+
+
+1. Take the DataModel and put it in DBMS 
+2. SQL Question created INSERT / UPDATE / DELETE / SELECT 
+3. JDBC shall take the data to DBMS 
+4. Test Cases 
+
+
+create table question(
+	quid int primary key, 
+	title varchar(50) not null,
+	description varchar(100) not null, 
+	votes int 
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+will reputation be points /badge 
