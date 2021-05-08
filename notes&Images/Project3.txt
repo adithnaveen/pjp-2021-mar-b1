@@ -1,0 +1,100 @@
+Retro 
+
+Team 1- 
+a. Sanyam  
+- Vibhu 
+- Shreya 
+- Sanchit  
+
+the code is in vscode need to put it in github and merge 
+	
+
+Team 2 
+b. Bitan  
+	- vikas
+ 	
+	
+	pls put author name 
+	
+	/**
+	* @author vikas 
+	*/
+	
+	
+c. Gaurav  
+- Jatin  
+- Mustafa 
+
+
+pls merge both repos 
+https://github.com/GauravismPS/reps
+https://github.com/Shivam279Chaudhary/reps
+
+
+
+
+
+d. Shivam  
+- Pankaj  
+- Akhil  
+- Harshit  
+https://github.com/GauravismPS/reps
+
+
+Questionid -q101 
+what is your name 
+
+Answers a101
+
+harry 
+barry 
+becky 
+pecky 
+
+UPDATE answer SET Description=?,Votes=?,ModifiedAt=?,QuestionID=102,UserID=?,Reliability=? WHERE AnswerID=?
+
+
+
+
+
+
+GSON 
+jackson 
+
+
+start.spring.io 
+
+com.sapient.reps 
+	RepsWorksApplicaiton.java
+com.sapient.reps.interfaces 	
+	IQuestionDao.java
+
+
+http://localhost:8080/api/health 
+
+GET is default 
+
+
+GET - GET 
+POST -  (INSERT)
+PUT - UPDATE 
+DELETE - DELETE 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Class Names - Pascal Case (EmployeeForm)
+methods - camel case (getEmpSalary)
+variable - camel case (empSalary)
+const - uppercase 
+package names - lower case 
