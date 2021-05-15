@@ -1,0 +1,192 @@
+Pod1 
+	CommentPost 
+	
+	
+	
+	
+	
+	public boolean insertPost(Post post);
+	
+	
+	public boolean insertPost(int uid, String title, int categoryId, String content, int votes, Timestamp timestamp, int reported);	
+	
+	
+
+class Post {
+	int pid, int uid, String title, int categoryId, String content, int votes, Timestamp timestamp, int reported;
+}
+
+
+
+
+ public void checkCommentId(int comid) throws InvalidId {
+			// TODO Auto-generated method stub
+			String sql  ="select count(*) from Comments_post WHERE COMID = ?"
+			
+			try {
+				PreparedStatement psException = DbConnect.getMySQLConn().prepareStatement(sql);
+				psException.setInt(1, comid);
+				ResultSet rs = psException.executeQuery();
+			
+				return rs.next();
+				
+			} catch (SQLException e1) {
+			
+				e1.printStackTrace();
+			}
+		}
+
+	
+	
+
+ @Override
+ public boolean deleteCommentById(int comid)
+ {
+	 
+	 	if(!checkCommentId(comid)) {
+			return false;
+		}
+		
+		String sql = "DELETE FROM Comments_post WHERE comid = ?";
+		PreparedStatement ps = null;
+		ResultSet rs = null; 
+		try {
+			ps = DbConnect.getMySQLConn().prepareStatement(sql);
+			ps.setInt(1, comid);
+			
+			return ps.executeUpdate() > 0;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+		try {
+			rs.close(); 
+			ps.close();
+			}catch(SqlException sqle){}
+		}
+		return false;
+ }
+	
+	
+	
+
+POD 2 
+	try avoiding short notions 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Resources 
+
+https://swagger.io/specification/
+	
+
+
+Pod 3 
+
+http://localhost:8080/api/login/{email}/{password} - GET 
+
+http://localhost:8080/api/login/user@user.com/secret 
+
+
+
+https://in.news.yahoo.com/virus-mutating-mask-physical-distancing-023059564.html
+
+
+
+
+
+https://login.yahoo.com/account/challenge/password?pspid=1197793323&activity=ybar-mail&.lang=en-IN&.intl=in&src=ym&done=https%3A%2F%2Fmail.yahoo.com%2Fd%3F.intl%3Din%26.lang%3Den-IN%26pspid%3D1197793323%26activity%3Dybar-mail&sessionIndex=QQ--&acrumb=F1WbbZT0&display=login&authMechanism=primary
+
+	
+	
+	
+	
+	public Boolean userLogin(@PathVariable String email, @PathVariable String password) {
+		return dao.getUserByEmailAndPwd(email, password).size ==0;
+	}
+	
+	
+	
+	
+POD 4 
+
+
+
+
+
+
+
+		String sql = "insert into answer (Description,Votes,ModifiedAt,QuestionID,UserID,Reliability) values(?,?,?,?,?,?)";
+
+
+
+
+
+insert into answer (Description,Votes,ModifiedAt,QuestionID,UserID,Reliability) values(?,?,?,?,?,?)
+
+
+INSERT INTO ANSWER(DESCRIPTION, VOTES,MODIFIEDAT,QUESTION_ID, USERID, RELIABILITY) VALUES(?,?,?,?,?,?)
+
+questionId 
+
+
+userAddr
+ 
+
+		String sql = "select AnswerID,Description,Votes,ModifiedAt,QuestionID,UserID,Reliability from answer where QuestionID= ? order by Votes "+order;
+
+
+
+
+
+
+
+
+
+all your controllers in in single branch -must 
+
+14 - 14 HTML 
+
+Shivam - login - take the end point 
+
+POST http://localhost:8080/api/user/login 
+
+Sailaja  - user registration 
+POST http://localhost:8080/api/user/registration
+
+create the HTML form 
+Vikas 
+
+
+1. We shall create HTML Pages 
+
+HTML / CSS3 
+	
+	Laptop 
+	tablet 
+
+
+
+
+
+
+
+768x1024 - tablet 
+1120x1600 - desktop 
+
+
+
+
+
+
+
+
+
+
+
+	

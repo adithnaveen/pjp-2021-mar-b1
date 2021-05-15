@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .bigscreen {
+            display: none;
+        }
+
+        .smallscreen {
+            display: block;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(230, 126, 42);
+        }
+
+        body {
+            margin: 0px 5px;
+        }
+
+
+        img {
+            width: 200px;
+            height: 150px;
+        }
+
+        /* only for desktop */
+        @media screen and (min-width:1120px) {
+
+            /* WRT to desktop goes here*/
+
+            .bigscreen {
+                display: block;
+            }
+
+            .smallscreen {
+                display: none;
+            }
+
+            h1 {
+                font-weight: 900;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: blue;
+            }
+
+            body {
+                margin: 0px 10px;
+            }
+
+            img {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    </style>
+
+    <script type="text/javascript">
+        function fnGetPosts() {
+            fetch("https://jsonplaceholder.typicode.com/todos/1")
+                .then(resp => resp.json())
+                .then(rep => {
+                    document.querySelector("#post").innerHTML
+                        = "User Id : " + rep.userId +
+                        "<br> Title :" + rep.title +
+                        "<br>Completed :" + rep.completed;
+                })
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <button onclick="fnGetPosts()">Click Me To See Post</button>
+    <div class="bigscreen">
+        <h1>This should be for big screen</h1>
+        <img src="./sapient.png" alt="sapinet official image">
+    </div>
+    <div class="smallscreen">
+        <h1>This should be for small screen</h1>
+        <img src="./sapient.png" alt="sapinet official image">
+    </div>
+
+    <div class="container">
+        <div id="post">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
