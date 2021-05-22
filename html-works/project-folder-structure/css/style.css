@@ -1,0 +1,39 @@
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    color: #222222;
+    text-align: center;
+
+}
+
+h1:hover {
+    font-weight: 700;
+    color: blue;
+}
+
+
+.container  {
+    width: 40%;
+    position: absolute;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid blue;
+    text-align: justify;
+}
+
+label {
+    color: chocolate;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: middle;
+}
+
+.content {
+    min-height: 60px;
+    border: 1px solid gray;
+    margin: 15px 0;
+}
+
+.content:nth-child(even) {
+    border-color: rgba(199, 178, 170, 0.5);
+    background-color:  rgba(199, 178, 170, 0.5);
+}
